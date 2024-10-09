@@ -5,7 +5,7 @@ import opponentPokemonList from "./components/OpponentPokemon";
 import Title from "./components/Title";
 
 export default function App() {
-    const firstPokemon = opponentPokemonList.pokemon6.name;
+    const firstPokemon = opponentPokemonList.pokemon5.name;
     const firstMove = opponentPokemonList.pokemon1.moves1;
     return (
         <Router>
