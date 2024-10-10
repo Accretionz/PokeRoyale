@@ -93,3 +93,52 @@
   height: auto;
   margin-top: 15px; /* Adds space between health bar and sprite */
 }
+
+.gameSetup-container {
+  display: flex;                
+  flex-direction: column;      
+  justify-content: flex-start;      
+  align-items: center;          
+  height: 100vh;
+}
+
+.gameSetup-title {
+  text-align: center;
+  color: white;
+}
+
+.gameSetup-random {
+  margin-top: 20px;          
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;                /* Ensures items wrap to the next line */
+  justify-content: center;        /* Centers the items horizontally */
+  margin-top: 20px;
+  gap: 20px;                      /* Adds space between the Pokémon divs */
+}
+
+.user-pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;                    /* Set a width to keep the names and sprites aligned */
+  text-align: center;
+  margin: 10px;
+}
+
+.user-pokemon h3 {
+  font-size: 14px;                 /* Adjust font size for long names */
+  color: #00bfff;                  /* Use a more consistent color */
+  margin: 5px 0;
+  word-wrap: break-word;           /* Break long words to the next line */
+  white-space: normal;             /* Allow wrapping of text */
+  max-width: 100%;                 /* Prevent the text from expanding beyond the container */
+  overflow: hidden;                /* Hide the overflow text */
+  text-overflow: ellipsis;         /* Add ellipsis for long names if you prefer */
+}
+
+.user-pokemon img {
+  width: 80px;                    /* Adjust size of Pokémon sprites */
+}

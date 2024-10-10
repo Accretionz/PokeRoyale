@@ -36,7 +36,7 @@ export default function Opponent(props) {
 
         const fetchData = async () => {
             try {
-                const response = await fetch(url); // Fetch data from API
+                const response = await fetch(url); 
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

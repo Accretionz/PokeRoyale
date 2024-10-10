@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Opponent from "./components/Opponent";
 import Player from "./components/Player";
+import GameSetup from "./components/GameSetup";
 import opponentPokemonList from "./components/OpponentPokemon";
 import Title from "./components/Title";
 
@@ -25,6 +26,14 @@ export default function App() {
                             <Player 
                                 name="lugia"
                             />
+                        </>
+                    }
+                />
+                <Route
+                    path="/gameSetup"
+                    element={
+                        <>
+                            <GameSetup />
                         </>
                     }
                 />

@@ -6,6 +6,9 @@ export default function () {
             <Link to="/opponent">
                 <button className="start">Start Game</button>
             </Link>
+            <Link to="/gameSetup">
+                <button className="setup">Build Team</button>
+            </Link>
         </div>
     )
 }
