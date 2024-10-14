@@ -201,3 +201,7 @@
     width: 100%;                  /* Expand Pokémon section width to fill screen */
   }
 }
+
+.user-pokemon {
+  color: white;
+}
