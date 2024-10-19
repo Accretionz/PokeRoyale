@@ -67,12 +67,10 @@ export default function Opponent(props) {
 
     return (
         <div className='battle-container'>
-            <h2 className='opponent-name'>{pokemonName.toUpperCase()}</h2>
-            <img className='opponent-sprite' src={pokemonSprite} alt={`${pokemonName} sprite`} />
-
             <div className="health-bar-container">
                 <div className="health-text">
-                    HP: {currentHealth} / {pokemonHealth}
+                    <span className="pokemon-name">{pokemonName.toUpperCase()}</span>
+                    <span className="pokemon-level">Lv. {props.level}</span>
                 </div>
                 <div className="health-bar-outline">
                     <div
@@ -84,6 +82,7 @@ export default function Opponent(props) {
                     />
                 </div>
             </div>
+            <img className='opponent-sprite' src={pokemonSprite} alt={`${pokemonName} sprite`} />
 
             <button onClick={() => takeDamage(20)}>Take 20 damage</button>
         </div>

@@ -3,9 +3,8 @@ import React, { useEffect, useState } from 'react';
 export default function Player({ team }) {
     return (
         <div className="team-container">
-            {/* Render all Pokémon in the player's team */}
             {team.length > 0 && team.map((pokemon, index) => (
-                <div key={index} className="user-pokemon">
+                <div key={index} className="user-pokemon-team">
                     <h2>{pokemon.name.toUpperCase()}</h2>
                     <img src={pokemon.sprite} alt={`${pokemon.name} sprite`} />
                 </div>

@@ -1,0 +1,70 @@
+.start {
+  margin-top: 20px;
+}
+
+/* Main container for the opponent's battle section */
+.battle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items (health bar and sprite) horizontally within this container */
+  justify-content: center; /* Vertically centers content within the container */
+  text-align: center; /* Aligns text in the center */
+  gap: 10px; /* Adds space between the elements */
+  height: 100vh; /* Makes sure the container fills the screen height */
+  
+  position: absolute; /* Absolute positioning for more control */
+  right: 150px; /* Moves the container away from the right edge (increase this for more spacing) */
+  margin-right: 50px; /* Optional: Adjust this value for additional spacing */
+}
+
+/* Health bar container centered over the sprite */
+.health-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center health bar in relation to sprite */
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Health text above the bar */
+.health-text {
+  display: flex;
+  justify-content: space-between;
+  width: 225px; /* Increased to 50% more (150px to 225px) */
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Outer health bar outline (black border) */
+.health-bar-outline {
+  width: 225px; /* Increased by 50% (from 150px) */
+  height: 18px; /* Increased by 50% (from 12px) */
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightgray; /* Background of the outline */
+  position: relative;
+}
+
+/* Inner health bar fill */
+.health-bar-fill {
+  height: 100%;
+  border-radius: 5px; /* Rounded corners for the health bar */
+  transition: width 0.5s ease-in-out; /* Smooth transition when health decreases */
+}
+
+/* Opponent sprite image styling */
+.opponent-sprite {
+  width: 300px; /* Increased by 50% (from 200px to 300px) */
+  height: auto;
+}
+
+/* Optional margin adjustments for spacing between the name and level */
+.pokemon-name {
+  margin-right: 10px;
+}
+
+.pokemon-level {
+  margin-left: 10px;
+}

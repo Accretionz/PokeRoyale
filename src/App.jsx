@@ -18,7 +18,6 @@ export default function App() {
     }, []);
 
     const firstPokemon = opponentPokemonList.pokemon4.name;
-    const firstMove = opponentPokemonList.pokemon1.moves1;
     return (
         <Router>
             <Routes>
@@ -29,10 +28,9 @@ export default function App() {
                         <>
                             <Opponent
                                 name={firstPokemon.toLowerCase()}
-                                move={firstMove}
                                 hpIV={0}
                                 hpEV={0}
-                                level={100}
+                                level={50}
                             />
                             <Player team={team} />
                         </>

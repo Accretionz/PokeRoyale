@@ -70,7 +70,7 @@ export default function GameSetup() {
                 Randomize Team
             </button>
 
-            <div className="team-container">
+            <div className="random-container">
                 {team.length > 0 && team.map((pokemon, index) => (
                     <div key={index} className="user-pokemon">
                         <h3>{pokemon.name.toUpperCase()}</h3>

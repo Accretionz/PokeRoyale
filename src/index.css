@@ -38,61 +38,6 @@
   color: transparent;
 }
 
-.start {
-  margin-top: 20px;
-}
-
-.opponent-name {
-  color: white;
-}
-
-.health-bar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  font-family: 'Arial', sans-serif;
-}
-
-/* Health text above the bar */
-.health-text {
-  margin-bottom: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-}
-
-/* Outer health bar outline (black border) */
-.health-bar-outline {
-  width: 150px;
-  height: 12px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: lightgray; /* Background of the outline */
-  position: relative;
-}
-
-/* Inner health bar fill */
-.health-bar-fill {
-  height: 100%;
-  border-radius: 5px; /* Rounded corners for the health bar */
-  transition: width 0.5s ease-in-out; /* Smooth transition when health decreases */
-}
-
-.battle-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Keep items centered horizontally */
-  margin-top: 20px; /* Position the container closer to the top */
-  text-align: center;
-  gap: 10px; /* Add space between the elements */
-}
-
-.opponent-sprite {
-  width: 200px;
-  height: auto;
-  margin-top: 15px; /* Adds space between health bar and sprite */
-}
 
 .gameSetup-container {
   display: flex;                
@@ -109,38 +54,6 @@
 
 .gameSetup-random {
   margin-top: 20px;          
-}
-
-.team-container {
-  display: flex;
-  flex-wrap: wrap;                /* Ensures items wrap to the next line */
-  justify-content: space-evenly;        /* Centers the items horizontally */
-  margin-top: 20px;
-  gap: 20px;                      /* Adds space between the Pokémon divs */
-}
-
-.user-pokemon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 120px;                    /* Set a width to keep the names and sprites aligned */
-  text-align: center;
-  margin: 10px;
-}
-
-.user-pokemon h3 {
-  font-size: 14px;                 /* Adjust font size for long names */
-  color: #00bfff;                  /* Use a more consistent color */
-  margin: 5px 0;
-  word-wrap: break-word;           /* Break long words to the next line */
-  white-space: normal;             /* Allow wrapping of text */
-  max-width: 100%;                 /* Prevent the text from expanding beyond the container */
-  overflow: hidden;                /* Hide the overflow text */
-  text-overflow: ellipsis;         /* Add ellipsis for long names if you prefer */
-}
-
-.user-pokemon img {
-  width: 80px;                    /* Adjust size of Pokémon sprites */
 }
 
 .move-button {
@@ -200,8 +113,4 @@
   .user-pokemon {
     width: 100%;                  /* Expand Pokémon section width to fill screen */
   }
-}
-
-.user-pokemon {
-  color: white;
 }
